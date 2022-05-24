@@ -4,7 +4,7 @@ import CounterHooks from "./CounterHooks";
 export const ThemeContext = React.createContext();
 
 function App() {
-  const [theme, setTheme] = useState("red");
+  const [theme, setTheme] = useState("green");
   console.log("render App");
   // const el = document.createElement("h1");
   // el.innerText("Hello World");
