@@ -3,7 +3,7 @@ import RecipeList from "./RecipeList";
 import "../css/app.css";
 import { v4 as uuidv4 } from "uuid";
 import RecipeEdit from "./RecipeEdit";
-import SearchBox from "./SearchBox";
+// import SearchBox from "./SearchBox";
 export const RecipeContext = React.createContext();
 const LOCAL_STORGAE_KEY = "cookingWithReact.recipes";
 function App() {
