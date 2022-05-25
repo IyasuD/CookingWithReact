@@ -3,6 +3,7 @@ import RecipeList from "./RecipeList";
 import "../css/app.css";
 import { v4 as uuidv4 } from "uuid";
 import RecipeEdit from "./RecipeEdit";
+import SearchBox from "./SearchBox";
 export const RecipeContext = React.createContext();
 const LOCAL_STORGAE_KEY = "cookingWithReact.recipes";
 function App() {
@@ -21,6 +22,9 @@ function App() {
   //   if (recipeJSON != null) setRecipes(JSON.parse(recipeJSON));
   // }, []);
   useEffect(() => {
+    {
+      /*Instead of loading from local disk fetch from API or create my own backend*/
+    }
     localStorage.setItem(LOCAL_STORGAE_KEY, JSON.stringify(recipes));
   }, [recipes]);
 
@@ -52,8 +56,8 @@ function App() {
     setRecipes([...recipes, newRecipe]);
   };
   const handleDeleteRecipe = (id) => {
-    if(selectedRecipeId != null && selectedRecipeId ===id){
-      setSelectedRecipeId(undefined)
+    if (selectedRecipeId != null && selectedRecipeId === id) {
+      setSelectedRecipeId(undefined);
     }
     const filteredRecipes = recipes.filter((recipe) => recipe.id !== id);
     setRecipes(filteredRecipes);
@@ -69,6 +73,7 @@ function App() {
         handleRecipeChange,
       }}
     >
+      {/* <SearchBox /> */}
       <RecipeList
         recipes={recipes}
         //handleRecipeAdd={handleRecipeAdd}

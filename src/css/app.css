@@ -5,6 +5,7 @@
 @import "recipe.css";
 @import "ingredient-list.css";
 @import "recipe-edit.css";
+@import "search-box.css";
 *,
 *::before,
 *::after {
@@ -20,4 +21,7 @@ body {
 }
 .mr-1 {
   margin-right: 5px;
+}
+.ml-1 {
+  margin-left: 10px;
 }

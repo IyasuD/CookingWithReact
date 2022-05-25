@@ -1,0 +1,8 @@
+.recipe__search {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.recipe__search--input {
+  width: 60%;
+  height: 40px;
+}
