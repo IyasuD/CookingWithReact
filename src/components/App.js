@@ -22,9 +22,8 @@ function App() {
   //   if (recipeJSON != null) setRecipes(JSON.parse(recipeJSON));
   // }, []);
   useEffect(() => {
-    {
-      /*Instead of loading from local disk fetch from API or create my own backend*/
-    }
+    /*Instead of loading from local disk fetch from API or create my own backend*/
+
     localStorage.setItem(LOCAL_STORGAE_KEY, JSON.stringify(recipes));
   }, [recipes]);
 
